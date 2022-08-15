@@ -25,6 +25,7 @@ public sealed partial class MainWindow : Window
     public MainWindow()
     {
         this.InitializeComponent();
+        Title = "GoodPass";
     }
 
     private void myButton_Click(object sender, RoutedEventArgs e)
