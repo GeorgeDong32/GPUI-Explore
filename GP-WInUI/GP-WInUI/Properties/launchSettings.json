@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GP-WInUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "GP-WInUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
