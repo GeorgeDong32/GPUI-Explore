@@ -26,7 +26,21 @@ public sealed partial class MainWindow : Window
     {
         this.InitializeComponent();
         Title = "GoodPass";
-        ExtendsContentIntoTitleBar = false;  // enable custom titlebar
+        ExtendsContentIntoTitleBar = true;  // enable custom titlebar
         SetTitleBar(AppTitleBar);      // set user ui element as titlebar
+        Activated += MainWindow_Activated;
+    }
+    private void MainWindow_Activated(object sender, WindowActivatedEventArgs args)
+    {
+        if (args.WindowActivationState == WindowActivationState.Deactivated)
+        {
+            AppTitleTextBlock.Foreground =
+                (SolidColorBrush)App.Current.Resources["WindowCaptionForegroundDisabled"];
+        }
+        else
+        {
+            AppTitleTextBlock.Foreground =
+                (SolidColorBrush)App.Current.Resources["WindowCaptionForeground"];
+        }
     }
 }

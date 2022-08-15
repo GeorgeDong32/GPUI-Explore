@@ -8,6 +8,6 @@
     mc:Ignorable="d">
 
     <Grid x:Name="AppTitleBar">
-        <TextBlock x:Name="AppTitle" Text="GoodPass" Height="28" VerticalAlignment="Top" Margin="8,4,0,0"/>
+        <TextBlock x:Name="AppTitleTextBlock" Text="GoodPass" Height="28" VerticalAlignment="Top" Margin="8,4,0,0"/>
     </Grid>
 </Window>
