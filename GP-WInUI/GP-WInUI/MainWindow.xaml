@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-    </StackPanel>
+    <Grid x:Name="AppTitleBar">
+        <TextBlock x:Name="AppTitle" Text="GoodPass" Height="28" VerticalAlignment="Top" Margin="8,4,0,0"/>
+    </Grid>
 </Window>

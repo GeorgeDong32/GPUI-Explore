@@ -26,10 +26,7 @@ public sealed partial class MainWindow : Window
     {
         this.InitializeComponent();
         Title = "GoodPass";
-    }
-
-    private void myButton_Click(object sender, RoutedEventArgs e)
-    {
-        myButton.Content = "Clicked";
+        ExtendsContentIntoTitleBar = false;  // enable custom titlebar
+        SetTitleBar(AppTitleBar);      // set user ui element as titlebar
     }
 }
