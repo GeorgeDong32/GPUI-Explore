@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "GP-WinUITS (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "GP-WinUITS (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
