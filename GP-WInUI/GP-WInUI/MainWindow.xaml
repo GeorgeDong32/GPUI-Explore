@@ -7,7 +7,28 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="AppTitleBar">
-        <TextBlock x:Name="AppTitleTextBlock" Text="GoodPass" Height="28" VerticalAlignment="Top" Margin="8,4,0,0"/>
+    <Grid x:Name="AppTitleBar"  
+          Height="48">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="LeftPaddingColumn" Width="0"/>
+            <ColumnDefinition x:Name="IconColumn" Width="Auto"/>
+            <ColumnDefinition x:Name="TitleColumn" Width="Auto"/>
+            <ColumnDefinition x:Name="LeftDragColumn" Width="*"/>
+            <ColumnDefinition x:Name="SearchColumn" Width="Auto"/>
+            <ColumnDefinition x:Name="RightDragColumn" Width="*"/>
+            <ColumnDefinition x:Name="RightPaddingColumn" Width="0"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="TitleBarIcon" Source="Assets/GPico64.png"
+           Grid.Column="1"
+           Width="16" Height="16"
+           Margin="8,0,0,0"/>
+        <TextBlock x:Name="TitleTextBlock" 
+               Text="App title" 
+               Style="{StaticResource CaptionTextBlockStyle}"
+               Grid.Column="2"
+               VerticalAlignment="Top"
+               HorizontalAlignment="Left"
+               Margin="4,0,0,0"/>
     </Grid>
+
 </Window>
