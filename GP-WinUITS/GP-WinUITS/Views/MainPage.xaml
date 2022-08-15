@@ -16,6 +16,7 @@
         <TextBlock
             Grid.Row="0"
             x:Uid="Main_Title"
+            Text="GPUI"
             Style="{StaticResource PageTitleStyle}" />
 
         <Grid Grid.Row="1">
