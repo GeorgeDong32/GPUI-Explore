@@ -201,6 +201,36 @@
     <Compile Include="Helpers\ResourceExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\GoodPass3.0.scale-100.png" />
+    <Content Include="Assets\GoodPass3.0.scale-125.png" />
+    <Content Include="Assets\GoodPass3.0.scale-150.png" />
+    <Content Include="Assets\GoodPass3.0.scale-200.png" />
+    <Content Include="Assets\GoodPass3.0.scale-400.png" />
+    <Content Include="Assets\GoodPassBadge.scale-100.png" />
+    <Content Include="Assets\GoodPassBadge.scale-125.png" />
+    <Content Include="Assets\GoodPassBadge.scale-150.png" />
+    <Content Include="Assets\GoodPassBadge.scale-200.png" />
+    <Content Include="Assets\GoodPassBadge.scale-400.png" />
+    <Content Include="Assets\GoodPassLogo.altform-lightunplated_targetsize-16.png" />
+    <Content Include="Assets\GoodPassLogo.altform-lightunplated_targetsize-24.png" />
+    <Content Include="Assets\GoodPassLogo.altform-lightunplated_targetsize-256.png" />
+    <Content Include="Assets\GoodPassLogo.altform-lightunplated_targetsize-32.png" />
+    <Content Include="Assets\GoodPassLogo.altform-lightunplated_targetsize-48.png" />
+    <Content Include="Assets\GoodPassLogo.altform-unplated_targetsize-16.png" />
+    <Content Include="Assets\GoodPassLogo.altform-unplated_targetsize-24.png" />
+    <Content Include="Assets\GoodPassLogo.altform-unplated_targetsize-256.png" />
+    <Content Include="Assets\GoodPassLogo.altform-unplated_targetsize-32.png" />
+    <Content Include="Assets\GoodPassLogo.altform-unplated_targetsize-48.png" />
+    <Content Include="Assets\GoodPassLogo.scale-100.png" />
+    <Content Include="Assets\GoodPassLogo.scale-125.png" />
+    <Content Include="Assets\GoodPassLogo.scale-150.png" />
+    <Content Include="Assets\GoodPassLogo.scale-200.png" />
+    <Content Include="Assets\GoodPassLogo.scale-400.png" />
+    <Content Include="Assets\GoodPassLogo.targetsize-16.png" />
+    <Content Include="Assets\GoodPassLogo.targetsize-24.png" />
+    <Content Include="Assets\GoodPassLogo.targetsize-256.png" />
+    <Content Include="Assets\GoodPassLogo.targetsize-32.png" />
+    <Content Include="Assets\GoodPassLogo.targetsize-48.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
