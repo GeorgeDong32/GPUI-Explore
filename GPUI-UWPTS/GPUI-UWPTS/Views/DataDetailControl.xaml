@@ -28,22 +28,22 @@
                     Style="{ThemeResource TitleTextBlockStyle}" />
             </StackPanel>
             <StackPanel Name="block" Padding="0,15,0,0">
-                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Status" />
+                <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="平台名称" />
                 <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.Status, Mode=OneWay}" />
                 <TextBlock
                     Margin="{StaticResource SmallTopMargin}"
                     Style="{StaticResource DetailSubTitleStyle}"
-                    Text="Order date" />
+                    Text="账号" />
                 <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.OrderDate, Mode=OneWay}" />
                 <TextBlock
                     Margin="{StaticResource SmallTopMargin}"
                     Style="{StaticResource DetailSubTitleStyle}"
-                    Text="Company" />
+                    Text="密码" />
                 <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.Company, Mode=OneWay}" />
                 <TextBlock
                     Margin="{StaticResource SmallTopMargin}"
                     Style="{StaticResource DetailSubTitleStyle}"
-                    Text="Ship to" />
+                    Text="备注" />
                 <TextBlock Style="{StaticResource DetailBodyBaseMediumStyle}" Text="{x:Bind ListMenuItem.ShipTo, Mode=OneWay}" />
                 <TextBlock
                     Margin="{StaticResource SmallTopMargin}"
