@@ -34,6 +34,7 @@ namespace GPUI_UWPTS.Views
         {
             InitializeComponent();
             Loaded += DataPage_Loaded;
+            
         }
 
         private async void DataPage_Loaded(object sender, RoutedEventArgs e)
@@ -51,6 +52,7 @@ namespace GPUI_UWPTS.Views
             {
                 Selected = SampleItems.FirstOrDefault();
             }
+            
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
