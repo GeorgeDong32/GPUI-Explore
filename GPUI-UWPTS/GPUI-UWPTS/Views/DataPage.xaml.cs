@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
 
 using GPUI_UWPTS.Core.Models;
 using GPUI_UWPTS.Core.Services;
@@ -13,13 +11,15 @@ using Microsoft.Toolkit.Uwp.UI.Controls;
 
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Media.Animation;
+
+using MicaForUWP.Media;
+
 
 namespace GPUI_UWPTS.Views
 {
     public sealed partial class DataPage : Page, INotifyPropertyChanged
     {
+
         private SampleOrder _selected;
 
         public SampleOrder Selected
@@ -30,11 +30,17 @@ namespace GPUI_UWPTS.Views
 
         public ObservableCollection<SampleOrder> SampleItems { get; private set; } = new ObservableCollection<SampleOrder>();
 
+        private List<BackgroundSource> BackgroundSources = new List<BackgroundSource>()
+        {
+            MicaForUWP.Media.BackgroundSource.Backdrop,
+            MicaForUWP.Media.BackgroundSource.HostBackdrop,
+            MicaForUWP.Media.BackgroundSource.MicaBackdrop,
+        };
+
         public DataPage()
         {
             InitializeComponent();
             Loaded += DataPage_Loaded;
-            
         }
 
         private async void DataPage_Loaded(object sender, RoutedEventArgs e)
