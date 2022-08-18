@@ -69,7 +69,7 @@
             x:Name="ListDetailsViewControl"
             x:Uid="Data"
             BackButtonBehavior="Inline"
-            Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}"
             BorderBrush="Transparent"
             DetailsTemplate="{StaticResource DetailsTemplate}"
             ItemsSource="{x:Bind SampleItems}"
