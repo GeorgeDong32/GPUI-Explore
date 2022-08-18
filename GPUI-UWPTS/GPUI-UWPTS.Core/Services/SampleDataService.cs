@@ -436,7 +436,7 @@ namespace GPUI_UWPTS.Core.Services
                             ShipperPhone = "(503) 555-3199",
                             Freight = 36.13,
                             Company = "Company Z",
-                            ShipTo = "Company Z, Mataderos  2312, 05023, México D.F., Mexico",
+                            ShipTo = "Company Z, Mataderos  2312, 05023, México D.C., Mexico",
                             OrderTotal = 375.50,
                             Status = "Closed",
                             SymbolCode = 57615, // Symbol Home
@@ -480,6 +480,23 @@ namespace GPUI_UWPTS.Core.Services
                                 }
                             }
                         }
+                    }
+                },
+                new SampleCompany()
+                {
+                    CompanyID = "Test",
+                    CompanyName = "Test",
+                    ContactName = "Test",
+                    ContactTitle = "Owner",
+                    Address = "Test 1234",
+                    City = "Test",
+                    PostalCode = "12345",
+                    Country = "Test",
+                    Phone = "(86) 123456",
+                    Fax = "Test123456",
+                    Orders = new List<SampleOrder>()
+                    {
+
                     }
                 }
             };
