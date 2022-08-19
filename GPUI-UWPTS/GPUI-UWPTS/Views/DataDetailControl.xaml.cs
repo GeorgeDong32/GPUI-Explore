@@ -1,7 +1,8 @@
 ﻿using System;
 
 using GPUI_UWPTS.Core.Models;
-
+using GPUI_UWPTS.Services;
+using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
@@ -26,6 +27,18 @@ namespace GPUI_UWPTS.Views
         {
             var control = d as DataDetailControl;
             control.ForegroundElement.ChangeView(0, 0, 1);
+        }
+
+        private void TestNbtn_Click(object sender, RoutedEventArgs e)
+        {
+            ToastNotificationsService toastNotificationsService = new ToastNotificationsService();
+            toastNotificationsService.ShowToastNotificationSample();
+        }
+
+        private void TestNbtn_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            ToastNotificationsService toastNotificationsService = new ToastNotificationsService();
+            toastNotificationsService.ShowToastNotificationSample();
         }
     }
 }

@@ -8,7 +8,7 @@ using Windows.UI.Notifications;
 
 namespace GPUI_UWPTS.Services
 {
-    internal partial class ToastNotificationsService : ActivationHandler<ToastNotificationActivatedEventArgs>
+    public partial class ToastNotificationsService : ActivationHandler<ToastNotificationActivatedEventArgs>
     {
         public void ShowToastNotification(ToastNotification toastNotification)
         {

@@ -4,7 +4,7 @@ using Windows.UI.Notifications;
 
 namespace GPUI_UWPTS.Services
 {
-    internal partial class ToastNotificationsService
+    public partial class ToastNotificationsService
     {
         public void ShowToastNotificationSample()
         {
