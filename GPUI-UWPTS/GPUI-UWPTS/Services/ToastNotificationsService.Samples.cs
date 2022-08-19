@@ -22,7 +22,7 @@ namespace GPUI_UWPTS.Services
                         {
                             new AdaptiveText()
                             {
-                                Text = "Sample Toast Notification"
+                                Text = "Test ToastNotification"
                             },
 
                             new AdaptiveText()
@@ -53,11 +53,11 @@ namespace GPUI_UWPTS.Services
             {
                 // TODO: Set a unique identifier for this notification within the notification group. (optional)
                 // More details at https://docs.microsoft.com/uwp/api/windows.ui.notifications.toastnotification.tag
-                Tag = "ToastTag"
+                Tag = "TestToast"
             };
 
             // And show the toast
-            ShowToastNotification(toast);
+            //ShowToastNotification(toast);
         }
     }
 }

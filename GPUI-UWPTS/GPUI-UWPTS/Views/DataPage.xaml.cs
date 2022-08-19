@@ -13,6 +13,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
 using MicaForUWP.Media;
+using GPUI_UWPTS.Services;
 
 
 namespace GPUI_UWPTS.Views
