@@ -57,7 +57,7 @@ namespace GPUI_UWPTS.Services
             };
 
             // And show the toast
-            //ShowToastNotification(toast);
+            ShowToastNotification(toast);
         }
     }
 }

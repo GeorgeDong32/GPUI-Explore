@@ -31,8 +31,11 @@ namespace GPUI_UWPTS.Views
 
         private void TestNbtn_Click(object sender, RoutedEventArgs e)
         {
-            ToastNotificationsService toastNotificationsService = new ToastNotificationsService();
-            toastNotificationsService.ShowToastNotificationSample();
+            if(TestNbtn.IsChecked == true)
+            {
+                ToastNotificationsService toastNotificationsService = new ToastNotificationsService();
+                toastNotificationsService.ShowToastNotificationSample();
+            }
         }
 
         private void TestNbtn_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
