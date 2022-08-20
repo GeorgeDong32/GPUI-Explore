@@ -76,5 +76,23 @@ namespace GPUI_UWPTS.Views
         }
 
         private void OnPropertyChanged(string propertyName) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+
+        private void TestNbtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (TestNbtn.IsChecked == true)
+            {
+                ToastNotificationsService toastNotificationsService = new ToastNotificationsService();
+                toastNotificationsService.ShowToastNotificationSample();
+            }
+        }
+
+        private void TestNbtn_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            if (TestNbtn.IsChecked == true)
+            {
+                ToastNotificationsService toastNotificationsService = new ToastNotificationsService();
+                toastNotificationsService.ShowToastNotificationSample();
+            }
+        }
     }
 }
