@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography;
-using GPUI_UWPTS.Core.Models;
+using GPDataNS;
 
-namespace GPUI_UWPTS.Core.Services
+namespace TestFunctions
 {
     public class GPDataService
     {
@@ -12,7 +12,7 @@ namespace GPUI_UWPTS.Core.Services
         {
             List<GPData> gpdatas = new List<GPData>();
             //在下方添加从文件加载数据的方法
-            
+
             //返回值区
             return gpdatas;
         }
@@ -34,9 +34,18 @@ namespace GPUI_UWPTS.Core.Services
 
     public class GPHES
     {
-        private string mainkey_s { get; set; }
-        private string salt_s { get; set; }
-        private string salted_mainkey { get; set; }
+        private string mainkey_s
+        {
+            get; set;
+        }
+        private string salt_s
+        {
+            get; set;
+        }
+        private string salted_mainkey
+        {
+            get; set;
+        }
 
         public GPHES(string mainkey)
         {
