@@ -112,7 +112,7 @@ namespace TestFunctions
             for (var i = 0; i < 4; i++)
                 s2[i] = salt_s[i + 4];
             remix = s1.ToString() + mainkey_s + s2.ToString();
-            /*Test code
+            /*Test codes
              Console.WriteLine(remix);*/
             //返回区
             salted_mainkey = remix;
