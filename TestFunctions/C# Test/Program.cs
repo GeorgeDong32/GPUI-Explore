@@ -11,8 +11,10 @@ namespace Program
         {
             var test = "GeorgeDong2352";
             var testservice = new GPDataService();
-
-            Console.WriteLine(EncryptProvider.Sha256(test));
+            var gphes = new GPHES(test);
+            gphes.GetSalt();
+            gphes.Mix();
+            Console.WriteLine(EncryptProvider.Sha256(gphes.SaltedStr));
             Console.WriteLine(testservice.GPHESservice(test));
             Console.WriteLine(testservice.GPHESservice(test));
         }

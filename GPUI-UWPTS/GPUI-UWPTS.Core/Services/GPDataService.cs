@@ -23,10 +23,10 @@ namespace GPUI_UWPTS.Core.Services
             var gphes = new GPHES(MainKey);
             gphes.GetSalt();
             gphes.Mix();
-            ushort data = ushort.Parse(gphes.SaltedStr);
-            byte[] SStr = BitConverter.GetBytes(data);
-            SHA256 sha256 = SHA256.Create();
-            HESResult = sha256.ComputeHash(SStr).ToString();
+            byte[] SHA256Data = Encoding.UTF8.GetBytes(gphes.SaltedStr);
+            SHA256Managed Sha256 = new SHA256Managed();
+            byte[] by = Sha256.ComputeHash(SHA256Data);
+            HESResult = BitConverter.ToString(by).Replace("-", "").ToLower();
             return HESResult;
         }
 

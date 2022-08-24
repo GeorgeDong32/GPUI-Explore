@@ -23,7 +23,11 @@ namespace TestFunctions
             var gphes = new GPHES(MainKey);
             gphes.GetSalt();
             gphes.Mix();
-            var HESResult = EncryptProvider.Sha256(gphes.SaltedStr);
+            byte[] SHA256Data = Encoding.UTF8.GetBytes(gphes.SaltedStr);
+            SHA256Managed Sha256 = new SHA256Managed();
+            byte[] by = Sha256.ComputeHash(SHA256Data);
+            var HESResult = BitConverter.ToString(by).Replace("-", "").ToLower();
+            //var HESResult = EncryptProvider.Sha256(gphes.SaltedStr);
             return HESResult;
         }
 
