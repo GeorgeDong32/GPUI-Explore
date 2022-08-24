@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography;
 using GPDataNS;
+using NETCore.Encrypt;
 
 namespace TestFunctions
 {
@@ -19,14 +20,10 @@ namespace TestFunctions
 
         public string GPHESservice(string MainKey)
         {
-            string HESResult = null;
             var gphes = new GPHES(MainKey);
             gphes.GetSalt();
             gphes.Mix();
-            ushort data = ushort.Parse(gphes.SaltedStr);
-            byte[] SStr = BitConverter.GetBytes(data);
-            SHA256 sha256 = SHA256.Create();
-            HESResult = sha256.ComputeHash(SStr).ToString();
+            var HESResult = EncryptProvider.Sha256(gphes.SaltedStr);
             return HESResult;
         }
 
@@ -50,8 +47,8 @@ namespace TestFunctions
         public GPHES(string mainkey)
         {
             mainkey_s = mainkey;
-            salt_s = null;
-            salted_mainkey = null;
+            salt_s = "12345678";
+            salted_mainkey = $"1234{mainkey}5678";
         }
 
         public string GetSalt()
