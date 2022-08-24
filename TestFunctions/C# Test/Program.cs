@@ -11,6 +11,7 @@ namespace Program
             var test = "GeorgeDong2352";
             var testservice = new GPDataService();
             Console.WriteLine(testservice.GPHESservice(test));
+            Console.WriteLine(testservice.GPHESservice(test));
         }
     }
 }
