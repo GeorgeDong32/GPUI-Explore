@@ -12,7 +12,7 @@ namespace GPUI_UWPTS.Core.Services
         {
             List<GPData> gpdatas = new List<GPData>();
             //在下方添加从文件加载数据的方法
-            
+
             //返回值区
             return gpdatas;
         }
@@ -23,10 +23,10 @@ namespace GPUI_UWPTS.Core.Services
             var gphes = new GPHES(MainKey);
             gphes.GetSalt();
             gphes.Mix();
-            ushort data = ushort.Parse(gphes.SaltedStr);
-            byte[] SStr = BitConverter.GetBytes(data);
-            SHA256 sha256 = SHA256.Create();
-            HESResult = sha256.ComputeHash(SStr).ToString();
+            byte[] SHA256Data = Encoding.UTF8.GetBytes(gphes.SaltedStr);
+            SHA256Managed Sha256 = new SHA256Managed();
+            byte[] by = Sha256.ComputeHash(SHA256Data);
+            HESResult = BitConverter.ToString(by).Replace("-", "").ToLower();
             return HESResult;
         }
 
@@ -34,9 +34,18 @@ namespace GPUI_UWPTS.Core.Services
 
     public class GPHES
     {
-        private string mainkey_s { get; set; }
-        private string salt_s { get; set; }
-        private string salted_mainkey { get; set; }
+        private string mainkey_s
+        {
+            get; set;
+        }
+        private string salt_s
+        {
+            get; set;
+        }
+        private string salted_mainkey
+        {
+            get; set;
+        }
 
         public GPHES(string mainkey)
         {
