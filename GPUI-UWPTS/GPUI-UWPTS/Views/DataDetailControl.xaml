@@ -66,7 +66,7 @@
                     Style="{StaticResource DetailBodyStyle}"
                     Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis hendrerit nulla, vel molestie libero. In nec ultricies magna, ultricies molestie ipsum. Mauris non dignissim velit. Etiam malesuada blandit mauris eu maximus. Quisque ornare, felis nec scelerisque mollis, risus dolor posuere magna, in gravida quam mi id nisi. Nullam mattis consequat ex. Cras nulla neque, dictum ac urna et, vestibulum feugiat ex. Pellentesque malesuada accumsan ligula, vel fringilla lacus facilisis sit amet. Proin convallis tempor arcu, ac placerat libero pretium ut. Praesent hendrerit nisl at lobortis viverra. Fusce vitae velit odio. Nam ut tortor sed purus finibus sollicitudin quis at ante. Ut sodales dolor vel eros mollis suscipit. Donec eu nulla id urna ultricies consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;" />
             </StackPanel>
-            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="43">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="43">
                 <ToggleButton x:Name="TestNbtn" Width="98" Content="Notification" CornerRadius="5" Click="TestNbtn_Click" Tapped="TestNbtn_Tapped" Height="39" HorizontalAlignment="Center"/>
             </StackPanel>
         </StackPanel>
