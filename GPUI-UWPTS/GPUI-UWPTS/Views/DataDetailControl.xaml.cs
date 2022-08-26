@@ -28,5 +28,23 @@ namespace GPUI_UWPTS.Views
             var control = d as DataDetailControl;
             control.ForegroundElement.ChangeView(0, 0, 1);
         }
+
+        private void TestNbtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (TestNbtn.IsChecked == true)
+            {
+                ToastNotificationsService toastNotificationsService = new ToastNotificationsService();
+                toastNotificationsService.ShowToastNotificationSample();
+            }
+        }
+
+        private void TestNbtn_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            if (TestNbtn.IsChecked == true)
+            {
+                ToastNotificationsService toastNotificationsService = new ToastNotificationsService();
+                toastNotificationsService.ShowToastNotificationSample();
+            }
+        }
     }
 }

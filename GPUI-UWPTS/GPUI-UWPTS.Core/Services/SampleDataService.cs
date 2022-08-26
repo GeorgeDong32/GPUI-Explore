@@ -537,6 +537,90 @@ namespace GPUI_UWPTS.Core.Services
                                     Total = 162.50
                                 }
                             }
+                        },
+                        new SampleOrder()
+                        {
+                            OrderID = 10507,
+                            OrderDate = new DateTime(1997, 4, 15),
+                            RequiredDate = new DateTime(1997, 5, 13),
+                            ShippedDate = new DateTime(1997, 4, 22),
+                            ShipperName = "Test",
+                            ShipperPhone = "(503) 555-9831",
+                            Freight = 47.45,
+                            Company = "Test",
+                            ShipTo = "Test, Mataderos  2312, 05023, México D.F., Mexico",
+                            OrderTotal = 978.50,
+                            Status = "Closed",
+                            SymbolCode = 57661, // Symbol Contact
+                            Details = new List<SampleOrderDetail>()
+                            {
+                                new SampleOrderDetail()
+                                {
+                                    ProductID = 43,
+                                    ProductName = "Ipoh Coffee",
+                                    Quantity = 15,
+                                    Discount = 0.15,
+                                    QuantityPerUnit = "16 - 500 g tins",
+                                    UnitPrice = 46.0,
+                                    CategoryName = "Beverages",
+                                    CategoryDescription = "Soft drinks, coffees, teas, beers, and ales",
+                                    Total = 816.00
+                                },
+                                new SampleOrderDetail()
+                                {
+                                    ProductID = 48,
+                                    ProductName = "Chocolade",
+                                    Quantity = 15,
+                                    Discount = 0.15,
+                                    QuantityPerUnit = "10 pkgs.",
+                                    UnitPrice = 12.75,
+                                    CategoryName = "Confections",
+                                    CategoryDescription = "Desserts, candies, and sweet breads",
+                                    Total = 162.50
+                                }
+                            }
+                        },
+                        new SampleOrder()
+                        {
+                            OrderID = 10507,
+                            OrderDate = new DateTime(1997, 4, 15),
+                            RequiredDate = new DateTime(1997, 5, 13),
+                            ShippedDate = new DateTime(1997, 4, 22),
+                            ShipperName = "Test",
+                            ShipperPhone = "(503) 555-9831",
+                            Freight = 47.45,
+                            Company = "Test",
+                            ShipTo = "Test, Mataderos  2312, 05023, México D.F., Mexico",
+                            OrderTotal = 978.50,
+                            Status = "Closed",
+                            SymbolCode = 57661, // Symbol Contact
+                            Details = new List<SampleOrderDetail>()
+                            {
+                                new SampleOrderDetail()
+                                {
+                                    ProductID = 43,
+                                    ProductName = "Ipoh Coffee",
+                                    Quantity = 15,
+                                    Discount = 0.15,
+                                    QuantityPerUnit = "16 - 500 g tins",
+                                    UnitPrice = 46.0,
+                                    CategoryName = "Beverages",
+                                    CategoryDescription = "Soft drinks, coffees, teas, beers, and ales",
+                                    Total = 816.00
+                                },
+                                new SampleOrderDetail()
+                                {
+                                    ProductID = 48,
+                                    ProductName = "Chocolade",
+                                    Quantity = 15,
+                                    Discount = 0.15,
+                                    QuantityPerUnit = "10 pkgs.",
+                                    UnitPrice = 12.75,
+                                    CategoryName = "Confections",
+                                    CategoryDescription = "Desserts, candies, and sweet breads",
+                                    Total = 162.50
+                                }
+                            }
                         }
                     }
                 }
