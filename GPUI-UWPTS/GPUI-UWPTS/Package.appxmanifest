@@ -10,7 +10,7 @@
   <Identity
     Name="95AF841A-95FE-498C-90B7-C620656ACB6B"
     Publisher="CN=GeorgeDong"
-    Version="1.0.0.0" />
+    Version="3.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="95AF841A-95FE-498C-90B7-C620656ACB6B" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
