@@ -77,8 +77,10 @@
             ListHeaderTemplate="{StaticResource ListHeaderTemplate}"
             NoSelectionContentTemplate="{StaticResource NoSelectionContentTemplate}"
             SelectedItem="{x:Bind Selected, Mode=TwoWay}" />
-
-        <ToggleButton x:Name="TestNbtn" Width="auto" Content="Notification" CornerRadius="5" Click="TestNbtn_Click" Tapped="TestNbtn_Tapped" VerticalAlignment="Bottom"></ToggleButton>
-
+        <Grid>
+            
+            <ToggleButton x:Name="TestNbtn" Width="auto" Content="Notification" CornerRadius="5" Click="TestNbtn_Click" Tapped="TestNbtn_Tapped" VerticalAlignment="Bottom"></ToggleButton>
+        </Grid>
     </Grid>
+    
 </Page>
