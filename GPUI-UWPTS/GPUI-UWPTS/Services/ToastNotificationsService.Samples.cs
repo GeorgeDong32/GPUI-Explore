@@ -59,5 +59,10 @@ namespace GPUI_UWPTS.Services
             // And show the toast
             ShowToastNotification(toast);
         }
+
+        public void ShowTestNotification(string NotificationTitle, string NotificationContent)
+        {
+
+        }
     }
 }
