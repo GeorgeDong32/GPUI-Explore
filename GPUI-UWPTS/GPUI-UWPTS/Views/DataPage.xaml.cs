@@ -77,6 +77,10 @@ namespace GPUI_UWPTS.Views
 
         private void OnPropertyChanged(string propertyName) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
-        
+        private void AddDataBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ToastNotificationsService toastNotificationsService = new ToastNotificationsService();
+            toastNotificationsService.ShowTestNotification("Add Data Button Clicked!", "You have clicked add data button!");
+        }
     }
 }

@@ -59,7 +59,18 @@
                     x:Name="headerText"
                     VerticalAlignment="Center"
                     Style="{StaticResource ListTitleStyle}"
-                    Text="{Binding}" />
+                    Text="数据" />
+                <Button x:Name="AddDataBtn"
+                        Content="+"
+                        Height="Auto"
+                        Width="Auto"
+                        CornerRadius="10"
+                        BorderThickness="1"
+                        BorderBrush="Black"
+                        Background="Transparent"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right"
+                        Click="AddDataBtn_Click"/>
             </Grid>
         </DataTemplate>
     </Page.Resources>
