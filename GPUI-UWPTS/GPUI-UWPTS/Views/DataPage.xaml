@@ -60,7 +60,9 @@
                     VerticalAlignment="Center"
                     Style="{StaticResource ListTitleStyle}"
                     Text="数据" />
-                
+                <Button x:Name="AddDataBtn"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right" />
             </Grid>
         </DataTemplate>
     </Page.Resources>
