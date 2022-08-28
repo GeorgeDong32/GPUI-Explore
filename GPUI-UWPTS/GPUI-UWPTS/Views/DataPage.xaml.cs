@@ -80,7 +80,7 @@ namespace GPUI_UWPTS.Views
         private void AddDataBtn_Click(object sender, RoutedEventArgs e)
         {
             ToastNotificationsService toastNotificationsService = new ToastNotificationsService();
-            toastNotificationsService.ShowToastNotificationSample();
+            toastNotificationsService.ShowTestNotification("Add Data Button Clicked!", "You have clicked add data button!");
         }
     }
 }
