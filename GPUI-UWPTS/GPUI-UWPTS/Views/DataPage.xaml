@@ -32,8 +32,8 @@
                     VerticalAlignment="Center">
                     <TextBlock Text="{x:Bind Company}" Style="{ThemeResource ListTitleStyle}" />
                     <TextBlock Text="{x:Bind Status}" Style="{StaticResource ListSubTitleStyle}" />
-                    <Button></Button>
                 </StackPanel>
+                <Button VerticalAlignment="Bottom"></Button>
             </Grid>
         </DataTemplate>
 
