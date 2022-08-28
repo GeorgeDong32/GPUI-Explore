@@ -33,13 +33,13 @@
                     <TextBlock Text="{x:Bind Company}" Style="{ThemeResource ListTitleStyle}" />
                     <TextBlock Text="{x:Bind Status}" Style="{StaticResource ListSubTitleStyle}" />
                 </StackPanel>
-                <Button VerticalAlignment="Bottom"></Button>
             </Grid>
         </DataTemplate>
 
         <DataTemplate x:Key="DetailsTemplate">
             <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
                 <views:DataDetailControl ListMenuItem="{Binding}" />
+                <Button VerticalAlignment="Bottom"></Button>
             </Grid>
         </DataTemplate>
 
