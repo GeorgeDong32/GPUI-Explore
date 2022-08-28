@@ -39,7 +39,6 @@
         <DataTemplate x:Key="DetailsTemplate">
             <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
                 <views:DataDetailControl ListMenuItem="{Binding}" />
-                <Button VerticalAlignment="Bottom"></Button>
             </Grid>
         </DataTemplate>
 
@@ -60,7 +59,8 @@
                     x:Name="headerText"
                     VerticalAlignment="Center"
                     Style="{StaticResource ListTitleStyle}"
-                    Text="{Binding}" />
+                    Text="数据" />
+                
             </Grid>
         </DataTemplate>
     </Page.Resources>
