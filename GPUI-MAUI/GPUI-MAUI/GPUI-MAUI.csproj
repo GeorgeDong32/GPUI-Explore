@@ -31,7 +31,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\gpico64.ico"/>
+		<MauiIcon Include="Resources\AppIcon\gpico64.ico" color="FFFFFF" BaseSize="128,128"/>
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
