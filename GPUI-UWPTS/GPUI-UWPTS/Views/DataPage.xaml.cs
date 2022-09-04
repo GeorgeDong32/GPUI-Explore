@@ -81,6 +81,7 @@ namespace GPUI_UWPTS.Views
         {
             ToastNotificationsService toastNotificationsService = new ToastNotificationsService();
             toastNotificationsService.ShowTestNotification("Add Data Button Clicked!", "You have clicked add data button!");
+            
         }
     }
 }
